@@ -1,0 +1,139 @@
+<!DOCTYPE hmtl>
+<html lang="pt_br">
+  <head>
+    <!--PAGE INFO-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulário</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Jquery-->
+    <script src="jquery.js"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/tmy3aie.css" />
+  </head>
+
+  <body>
+    <h1 id="tit_pg">Cadastro de pessoas</h1>
+
+    <h2 id="subtit_pg">Preencha com seus dados</h2>
+
+    <div id="background">
+      <fieldset class="form">
+        <legend id="tit_form">Informações Pessoais:</legend>
+
+        <form
+          action="inserir.php"
+          method="get"
+          name="formulario"
+          class="formulario"
+        >
+          <p>
+            <label for="Nome" class="texts">Nome:</label>
+            <input
+              type="text"
+              onKeyUp="maiuscula(this);"
+              name="Nome"
+              placeholder="Digite seu nome..."
+              id="box-nome"
+              class="function_name"
+            />
+          </p>
+          <p>
+            <label for="Sobrenome" class="texts">Sobrenome:</label>
+            <input
+              type="text"
+              onKeyUp="maiuscula(this);"
+              name="Sobrenome"
+              placeholder="Digite seu sobrenome..."
+              id="box-sobrenome"
+              class="function_name"
+            />
+          </p>
+
+          <p>
+            <label for="Email" class="texts">Email:</label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Digite seu email"
+              class="background_color"
+            />
+          </p>
+
+          <p>
+            <label for="Senha" class="texts">Senha:</label>
+            <input
+              type="password"
+              name="Senha"
+              placeholder="Digite sua senha"
+              class="background_color"
+            />
+          </p>
+
+          <p>
+            <label for="Genero" class="texts">Gênero:</label>
+            <input type="radio" name="Genero" value="Masculino" />
+            <label class="texts">Masculino</label>
+            <input type="radio" name="Genero" value="Feminino" />
+            <label class="texts">Feminino</label>
+            <input type="radio" name="Genero" value="Outro" />
+            <label class="texts">Outro</label>
+          </p>
+
+          <p>
+            <label for="selecione" class="texts"
+              >Linguagem de programação favorita:</label
+            >
+            <select name="selecione" class="background_color">
+              <option value="1">Java</option>
+              <option value="2">C++</option>
+              <option value="3">Python</option>
+              <option value="4">JavaScript</option>
+              <option value="5">Delphi</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="Casado" class="texts">Casado:</label>
+            <input type="checkbox" name="Casado" value="1" />
+          </p>
+
+          <p>
+            <label for="nome" class="texts">Filhos:</label>
+            <input
+              type="checkbox"
+              onClick="habilitarCampo();"
+              name="filhos"
+              id="filhos"
+              value="true"
+            />
+            <label for="nome" class="texts">Quantidade de filhos:</label>
+            <input
+              type="number"
+              name="qtdFilhos"
+              min="0"
+              id="qtdFilhos"
+              onClick="habilitarCampo();"
+              disabled
+            />
+          </p>
+
+          <input type="submit" name="Salvar_infos" value="Salvar Informações" />
+
+          <input type="reset" name="Limpar_infos" value="Limpar dados" />
+        </form>
+      </fieldset>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script src="/main.js"></script>
+  </body>
+</html>

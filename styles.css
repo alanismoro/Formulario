@@ -1,0 +1,53 @@
+/*===== BASE ======*/
+#tit_pg {
+  position: relative;
+  text-align: center;
+  font-family: 'Raleway';
+  color: darkgreen;
+}
+
+#subtit_pg {
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.texts {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#background {
+  height: 425px;
+  width: 880px;
+  background-color: bisque;
+  position: absolute;
+}
+
+.form {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*===== FORMULARIO ======*/
+#tit_form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+}
+
+#box-nome {
+  background-color: rgb(221, 221, 221);
+}
+
+#box-sobrenome {
+  background-color: rgb(221, 221, 221);
+}
+
+.background_color {
+  background-color: rgb(221, 221, 221);
+}
