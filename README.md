@@ -1,5 +1,5 @@
 # Formulario
-Formulário desenvolvido por Alanis Moro para um trabalho da faculdade. Tecnologias usadas: HTML, CSS, JavaScript e JQuery.
+Formulário desenvolvido por Alanis Moro para um trabalho da faculdade Uceff no curso de Análise e Desenvolvimento de Sistemas. Tecnologias usadas: HTML, CSS, JavaScript e JQuery.
 
 Obrigada ao professor Maico Lovatto pela ajuda!
 
